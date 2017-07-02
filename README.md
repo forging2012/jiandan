@@ -6,7 +6,7 @@
 
 环境安装请查看：[个人博客](http://www.lenggirl.com/tool/gospider-env.html)
 
-结果，总共抓取了56,961 篇文章
+结果，总共抓取了58,097 篇文章
 
 获取代码：
 

@@ -65,13 +65,13 @@ var (
 		Dbname:   "jiandan",
 	}
 
-	RedisClient myredis.MyRedis
+	RedisClient *myredis.MyRedis
 
 	RedisListTodo  = "jiandantodo"
 	RedisListDoing = "jiandandoing"
 	RedisListDone  = "jiandandone"
 
-	MysqlClient mysql.Mysql
+	MysqlClient *mysql.Mysql
 )
 
 // 设置全局
