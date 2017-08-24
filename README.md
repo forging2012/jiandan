@@ -4,7 +4,9 @@
 
 爬虫工程师进阶必备!高级示例！依赖核心库：[土拔鼠Golang爬虫包](https://github.com/hunterhug/GoSpider)
 
-环境安装请查看：[个人博客](http://www.lenggirl.com/tool/gospider-env.html)
+环境安装请查看：[个人博客](http://www.lenggirl.com/tool/gospider-env.html)或者
+
+Look at: [https://github.com/hunterhug/GoSpider-docker](https://github.com/hunterhug/GoSpider-docker)
 
 结果，总共抓取了58,097 篇文章
 
@@ -50,3 +52,11 @@ go get -u -v github.com/hunterhug/jiandan
 ![](/doc/jiandan/redis.png)
 ![](/doc/jiandan/file.png)
 ![](/doc/jiandan/mysql.png)
+
+如果你觉得项目帮助到你,欢迎请我喝杯咖啡
+
+微信
+![微信](https://raw.githubusercontent.com/hunterhug/hunterhug.github.io/master/static/jpg/wei.png)
+
+支付宝
+![支付宝](https://raw.githubusercontent.com/hunterhug/hunterhug.github.io/master/static/jpg/ali.png)
