@@ -2,7 +2,7 @@
 
 ## 萌萌介绍
 
-多浏览器持久化cookie分布式爬虫爬取数据，使用到redis，mysql，将网页数据保存在磁盘中，详情页解析后存入数据库。
+多浏览器持久化cookie分布式爬虫爬取数据,使用到redis,mysql,将网页数据保存在磁盘中,详情页解析后存入数据库。
 
 爬虫工程师进阶必备!高级示例！依赖核心库：[土拔鼠Golang爬虫包](https://github.com/hunterhug/GoSpider)
 
@@ -10,7 +10,7 @@
 
 本项目使用docker方式：[https://github.com/hunterhug/GoSpider-docker](https://github.com/hunterhug/GoSpider-docker)
 
-结果，总共抓取了58,097 篇文章， 可在多台机器同时开启爬虫，分布式抓取。
+结果,总共抓取了58,097 篇文章, 可在多台机器同时开启爬虫,分布式抓取。
 
 ## 如何使用
 
@@ -20,25 +20,25 @@
 go get -u -v github.com/hunterhug/jiandan
 ```
 
-1.编辑`config.json`配置，说明如下：
+1.编辑`config.json`配置,说明如下：
 
 ```
 {
-  "dir": "",  // 原始html文件保存路径，留空为二进制执行所在目录
-  "log": "info",  // 日志级别，改为debug可看到cookie等
+  "dir": "",  // 原始html文件保存路径,留空为二进制执行所在目录
+  "log": "info",  // 日志级别,改为debug可看到cookie等
   "detail_spider_num": 30, // 详情页爬虫并发数
   "index_spider_num": 3, // 列表页爬虫并发数
   "time_out": 15,  // html获取超时时间
   "redis": {   // redis设置
     "Host": "127.0.0.1:6379",
-    "Password": "GoSpider", // 密码为空留空，本项目docker环境密码为GoSpider
+    "Password": "GoSpider", // 密码为空留空,本项目docker环境密码为GoSpider
     "DB": 0
   },
   "mysql": {  // mysql配置
     "Username": "root",  //用户名
-    "Password": "459527502", // 密码，本项目docker环境密码为459527502
+    "Password": "459527502", // 密码,本项目docker环境密码为459527502
     "Ip": "127.0.0.1",
-    "Port": "3307", // 端口，本项目为了防止和自己的mysql冲突，改为3307，见help/docker-compose.yaml
+    "Port": "3307", // 端口,本项目为了防止和自己的mysql冲突,改为3307,见help/docker-compose.yaml
     "Dbname": "jiandan"
   }
 }
@@ -47,7 +47,7 @@ go get -u -v github.com/hunterhug/jiandan
 
 2.运行程序
 
-先安装`mysql`和`redis`，为了省事，你可以这样[Linux用户](help/README.md),Window用户请自行安装:
+先安装`mysql`和`redis`,为了省事,你可以这样[Linux用户](help/README.md),Window用户请自行安装:
 
 ```
 cd help
@@ -71,7 +71,9 @@ go run main.go
 
 ![](doc/jiandan/xx.png)
 
-3.数据保存在data文件夹和数据库中,重抓要删除Redis数据库和文件夹,如果只是接力，即是增量抓取，那么不需要删redis并且文件夹data/detail可不删，其他文件要删。
+3.数据保存在data文件夹和数据库中,重抓要删除Redis(如何删除请百度)数据库和文件夹(全部)
+
+如果只是接力,即是增量抓取,那么不需要删redis并且文件夹`data/detail`可不删,其他文件(重点)要删。
 
 ![](doc/jiandan/redis.png)
 
@@ -96,7 +98,7 @@ go run main.go
 go run main.go -config=/home/config.json -clear=1
 ```
 
-详细说明见[http://www.lenggirl.com/spider/jiandan.html](http://www.lenggirl.com/spider/jiandan.html)
+详细说明见[http://www.lenggirl.com/spider/jiandan.html](http://www.lenggirl.com/spider/jiandan.html),代码改了一部分了..
 
 ## 支持大兄弟
 
