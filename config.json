@@ -1,0 +1,19 @@
+{
+  "dir": "",
+  "log": "info",
+  "detail_spider_num": 30,
+  "index_spider_num": 3,
+  "time_out": 15,
+  "redis": {
+    "Host": "127.0.0.1:6379",
+    "Password": "GoSpider",
+    "DB": 0
+  },
+  "mysql": {
+    "Username": "root",
+    "Password": "459527502",
+    "Ip": "127.0.0.1",
+    "Port": "3307",
+    "Dbname": "jiandan"
+  }
+}
